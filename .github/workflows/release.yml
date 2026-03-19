@@ -7,8 +7,7 @@ on:
       - "**"
 
 env:
-  CF_API_KEY: ${{ secrets.CF_API_KEY }}
-  GITHUB_OAUTH: ${{ secrets.GITHUB_TOKEN }}
+  GITHUB_OAUTH: ${{ secrets.GH_TOKEN }}
 
 jobs:
   release:

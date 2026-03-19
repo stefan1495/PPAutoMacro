@@ -4,7 +4,6 @@
 ## Author: turulix
 ## Notes: Updates the Macro PPAutoPot & PPAutoFlask to use the highest Potion & Flask Available.
 ## SavedVariablesPerCharacter: PPDB
-## X-Curse-Project-ID: 818023
 Code.lua
 Core/Item.lua
 Core/Potions.lua
