@@ -5,16 +5,16 @@ pp[flaskPrefix] = {}
 -- Lower => Higher priority
 flaskData = {
     useFlaskOfThalassianResistance = {
-        { key = "FlaskOfThalassianResistance", tierIDs = { 241321, 241320 } };
+        { key = "FlaskOfThalassianResistance", tierIDs = { 241321, 241320, 245927, 245926 } };
     },
     useFlaskOfTheMagisters = {
-        { key = "FlaskOfTheMagisters", tierIDs = { 241323, 241322 } };
+        { key = "FlaskOfTheMagisters", tierIDs = { 241323, 241322, 245932, 245933 } };
     },
     useFlaskOfTheBloodKnights = {
-        { key = "FlaskOfTheBloodKnights", tierIDs = { 241325, 241324 } };
+        { key = "FlaskOfTheBloodKnights", tierIDs = { 241325, 241324, 245930, 245931 } };
     },
     useFlaskOfTheShatteredSun = {
-        { key = "FlaskOfTheShatteredSun", tierIDs = { 241327, 241326 } };
+        { key = "FlaskOfTheShatteredSun", tierIDs = { 241327, 241326, 245928, 245929 } };
     },
     useViciousThalassianFlaskOfHonor = {
         { key = "ViciousThalassianFlaskOfHonor", tierIDs = { 241335, 241334 } };
