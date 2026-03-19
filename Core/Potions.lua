@@ -4,21 +4,41 @@ pp[potionPrefix] = {}
 
 -- Lower => Higher priority
 potionData = {
-    useFrontlinePotion = {
-        { key = "FrontlinePower", tierIDs = { 212260, 212261, 212262 } };
-        { key = "FleetFrontlinePower", tierIDs = { 212966, 212967, 212968 } };
+    useLightsPreservation = {
+        { key = "LightsPreservation", tierIDs = { 241287, 241286 } };
     },
-    useGrotesqueVials = {
-        { key = "GrotesqueVials", tierIDs = { 212254, 212255, 212256 } };
-        { key = "FleetGrotesqueVials", tierIDs = { 212960, 212961, 212962 } };
+    usePotionOfRecklessness = {
+        { key = "PotionOfRecklessness", tierIDs = { 241289, 241288 } };
     },
-    useTemperedPotions = {
-        { key = "TemperedPotions", tierIDs = { 212263, 212264, 212265 } };
-        { key = "FleetTemperedPotions", tierIDs = { 212969, 212970, 212971 } };
+    useDraughtOfRampantAbandon = {
+        { key = "DraughtOfRampantAbandon", tierIDs = { 241293, 241292 } };
     },
-    usePotionOfUnwaveringFocus = {
-        { key = "PotionOfUnwaveringFocus", tierIDs = { 212257, 212258, 212259 } };
-        { key = "FleetPotionOfUnwaveringFocus", tierIDs = { 212963, 212964, 212965 } };
+    usePotionOfDevouredDreams = {
+        { key = "PotionOfDevouredDreams", tierIDs = { 241295, 241294 } };
+    },
+    usePotionOfZealotry = {
+        { key = "PotionOfZealotry", tierIDs = { 241297, 241296 } };
+    },
+    useAmaniExtract = {
+        { key = "AmaniExtract", tierIDs = { 241299, 241298 } };
+    },
+    useLightfusedManaPotion = {
+        { key = "LightfusedManaPotion", tierIDs = { 241301, 241300 } };
+    },
+    useVoidShroudedTincture = {
+        { key = "VoidShroudedTincture", tierIDs = { 241303, 241302 } };
+    },
+    useSilvermoonHealthPotion = {
+        { key = "SilvermoonHealthPotion", tierIDs = { 241305, 241304 } };
+    },
+    useRefreshingSerum = {
+        { key = "RefreshingSerum", tierIDs = { 241307, 241306 } };
+    },
+    useLightsPotential = {
+        { key = "LightsPotential", tierIDs = { 241309, 241308 } };
+    },
+    useEnlightenmentTonic = {
+        { key = "EnlightenmentTonic", tierIDs = { 241339, 241338 } };
     },
 }
 

@@ -1,16 +1,21 @@
 local addonName, pp = ...
 local potionMacroName = "PPAutoPot"
-local phialMacroName = "PPAutoPhial"
+local flaskMacroName = "PPAutoFlask"
+local legacyPhialMacroName = "PPAutoPhial"
 
-phialPrefix = "Phial"
+flaskPrefix = "Flask"
 potionPrefix = "Potion"
 
 local function createMacroIfMissing()
     if GetMacroInfo(potionMacroName) == nil then
         CreateMacro(potionMacroName, "INV_Misc_QuestionMark")
     end
-    if GetMacroInfo(phialMacroName) == nil then
-        CreateMacro(phialMacroName, "INV_Misc_QuestionMark")
+    if GetMacroInfo(flaskMacroName) == nil then
+        CreateMacro(flaskMacroName, "INV_Misc_QuestionMark")
+    end
+    -- Keep legacy compatibility for users with existing PPAutoPhial bindings/macros.
+    if GetMacroInfo(legacyPhialMacroName) == nil then
+        CreateMacro(legacyPhialMacroName, "INV_Misc_QuestionMark")
     end
 end
 
@@ -36,11 +41,14 @@ end
 local function updateMacro()
     createMacroIfMissing()
     EditMacro(potionMacroName, potionMacroName, nil, buildMacroString(pp.availablePotions))
-    EditMacro(phialMacroName, phialMacroName, nil, buildMacroString(pp.availablePhials))
+    EditMacro(flaskMacroName, flaskMacroName, nil, buildMacroString(pp.availableFlasks))
+    if GetMacroInfo(legacyPhialMacroName) ~= nil then
+        EditMacro(legacyPhialMacroName, legacyPhialMacroName, nil, buildMacroString(pp.availableFlasks))
+    end
 end
 
 local function addPotionIfAvailable()
-    pots = pp.getPots()
+    local pots = pp.getPots()
     for _, value in ipairs(pots) do
         if value.getCount() > 0 then
             table.insert(pp.availablePotions, value.getId())
@@ -50,11 +58,11 @@ local function addPotionIfAvailable()
     end
 end
 
-local function addPhialIfAvailable()
-    phials = pp.getPhials()
-    for _, value in ipairs(phials) do
+local function addFlaskIfAvailable()
+    local flasks = pp.getFlasks()
+    for _, value in ipairs(flasks) do
         if value.getCount() > 0 then
-            table.insert(pp.availablePhials, value.getId())
+            table.insert(pp.availableFlasks, value.getId())
             --we break because all Pots share a cd so we only want the highest power potion
             break ;
         end
@@ -63,9 +71,9 @@ end
 
 local function updateAvailablePots()
     pp.availablePotions = {}
-    pp.availablePhials = {}
+    pp.availableFlasks = {}
     addPotionIfAvailable()
-    addPhialIfAvailable()
+    addFlaskIfAvailable()
 end
 
 local onCombat = true
