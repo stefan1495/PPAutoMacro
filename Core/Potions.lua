@@ -8,16 +8,16 @@ potionData = {
         { key = "LightsPreservation", tierIDs = { 241287, 241286 } };
     },
     usePotionOfRecklessness = {
-        { key = "PotionOfRecklessness", tierIDs = { 241289, 241288 } };
+        { key = "PotionOfRecklessness", tierIDs = { 241289, 241288, 245903, 245902 } };
     },
     useDraughtOfRampantAbandon = {
-        { key = "DraughtOfRampantAbandon", tierIDs = { 241293, 241292 } };
+        { key = "DraughtOfRampantAbandon", tierIDs = { 241293, 241292, 245911 } };
     },
     usePotionOfDevouredDreams = {
         { key = "PotionOfDevouredDreams", tierIDs = { 241295, 241294 } };
     },
     usePotionOfZealotry = {
-        { key = "PotionOfZealotry", tierIDs = { 241297, 241296 } };
+        { key = "PotionOfZealotry", tierIDs = { 241297, 241296, 245900, 245901 } };
     },
     useAmaniExtract = {
         { key = "AmaniExtract", tierIDs = { 241299, 241298 } };
@@ -35,7 +35,7 @@ potionData = {
         { key = "RefreshingSerum", tierIDs = { 241307, 241306 } };
     },
     useLightsPotential = {
-        { key = "LightsPotential", tierIDs = { 241309, 241308 } };
+        { key = "LightsPotential", tierIDs = { 241309, 241308, 245897, 245898 } };
     },
     useEnlightenmentTonic = {
         { key = "EnlightenmentTonic", tierIDs = { 241339, 241338 } };
