@@ -32,7 +32,7 @@ pp.PPItem.new = function(id)
 
     --- @return number
     function self.getCount ()
-        return GetItemCount(self.id, false, false, false, false)
+        return C_Item.GetItemCount(self.id, false, false, false, false)
     end
 
     return self
